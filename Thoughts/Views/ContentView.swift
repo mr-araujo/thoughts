@@ -10,28 +10,33 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var selection = 0
- 
+    
     var body: some View {
         TabView(selection: $selection){
-            Text("First View")
-                .font(.title)
+           ThoughtsView()
                 .tabItem {
                     VStack {
-                        Image("first")
-                        Text("First")
+                        Image("quotes")
+                           .renderingMode(.template)
+                        Text("Thougts")
+                        
                     }
-                }
-                .tag(0)
+                    
+            }
+            .tag(0)
+            
             Text("Second View")
                 .font(.title)
                 .tabItem {
                     VStack {
-                        Image("second")
-                        Text("Second")
+                        Image("settings")
+                            .renderingMode(.template)
+                        Text("Settings")
+                        
                     }
-                }
-                .tag(1)
-        }
+            }
+            .tag(1)
+        } .accentColor(.orange)
     }
 }
 
