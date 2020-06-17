@@ -19,14 +19,11 @@ struct ContentView: View {
                         Image("quotes")
                            .renderingMode(.template)
                         Text("Thougts")
-                        
                     }
-                    
             }
             .tag(0)
             
-            Text("Second View")
-                .font(.title)
+           SettingsView()
                 .tabItem {
                     VStack {
                         Image("settings")

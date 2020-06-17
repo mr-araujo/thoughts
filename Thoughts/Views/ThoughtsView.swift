@@ -10,27 +10,25 @@ import SwiftUI
 
 struct ThoughtsView: View {
     var body: some View {
-        ZStack {
-            
-            Color.orange
-                .edgesIgnoringSafeArea(.all)
+        ZStack{
+            Text("").background(Image("steve_jobs").blur(radius: 50))
             
             VStack {
                 Image("steve_jobs")
                     .resizable()
-                    .aspectRatio(contentMode: .fit)
-
+                    .aspectRatio(CGSize(width: 750.0, height: 666.0), contentMode: .fit)
+                
                 Spacer()
                 
                 Text("Thoughts")
                     .font(.custom("Savoye LET", size: 50))
-                    .foregroundColor(.white)
+                    .foregroundColor(.black)
                 
                 Spacer()
                 
                 Text("Steve Jobs")
                     .font(.custom("Savoye LET", size: 30))
-                    .foregroundColor(.yellow)
+                    .foregroundColor(.orange)
             }
         }
     }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F420BAB8249AD243001E78A8 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F420BAB7249AD243001E78A8 /* SettingsView.swift */; };
 		F4CCDDEF24996CF500AA7EBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CCDDEE24996CF500AA7EBF /* AppDelegate.swift */; };
 		F4CCDDF124996CF500AA7EBF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CCDDF024996CF500AA7EBF /* SceneDelegate.swift */; };
 		F4CCDDF324996CF500AA7EBF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CCDDF224996CF500AA7EBF /* ContentView.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F420BAB7249AD243001E78A8 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		F4CCDDEB24996CF500AA7EBF /* Thoughts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Thoughts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4CCDDEE24996CF500AA7EBF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4CCDDF024996CF500AA7EBF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				F4CCDDF224996CF500AA7EBF /* ContentView.swift */,
 				F4CCDE0E2499823600AA7EBF /* ThoughtsView.swift */,
 				F4CCDDF924996CF900AA7EBF /* LaunchScreen.storyboard */,
+				F420BAB7249AD243001E78A8 /* SettingsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -181,6 +184,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F420BAB8249AD243001E78A8 /* SettingsView.swift in Sources */,
 				F4CCDDEF24996CF500AA7EBF /* AppDelegate.swift in Sources */,
 				F4CCDDF124996CF500AA7EBF /* SceneDelegate.swift in Sources */,
 				F4CCDE0F2499823600AA7EBF /* ThoughtsView.swift in Sources */,
