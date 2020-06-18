@@ -10,20 +10,25 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var selection = 0
+    @State var quote = QuotesController().getRandomQuote()
+    @State var timer: Timer?
     
     var body: some View {
         TabView(selection: $selection){
-           ThoughtsView()
+            ThoughtsView(quote: quote)
                 .tabItem {
                     VStack {
                         Image("quotes")
-                           .renderingMode(.template)
+                            .renderingMode(.template)
                         Text("Thougts")
                     }
             }
             .tag(0)
+            .onAppear{
+                self.prepareQuote()
+            }
             
-           SettingsView()
+            SettingsView()
                 .tabItem {
                     VStack {
                         Image("settings")
@@ -34,6 +39,13 @@ struct ContentView: View {
             }
             .tag(1)
         } .accentColor(.orange)
+    }
+    
+    func prepareQuote(){
+        timer?.invalidate()
+        timer = Timer.scheduledTimer(withTimeInterval: 8, repeats: true) { timer in
+            self.quote = QuotesController().getRandomQuote()
+        }
     }
 }
 

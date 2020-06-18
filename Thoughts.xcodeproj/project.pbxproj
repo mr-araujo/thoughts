@@ -17,6 +17,8 @@
 		F4CCDE052499709500AA7EBF /* quotes.json in Resources */ = {isa = PBXBuildFile; fileRef = F4CCDE032499709400AA7EBF /* quotes.json */; };
 		F4CCDE0C2499772F00AA7EBF /* Savoye LET.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4CCDE0B2499772F00AA7EBF /* Savoye LET.ttf */; };
 		F4CCDE0F2499823600AA7EBF /* ThoughtsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CCDE0E2499823600AA7EBF /* ThoughtsView.swift */; };
+		F4FB5FDB249BBD970017F201 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FB5FDA249BBD970017F201 /* Quote.swift */; };
+		F4FB5FDE249BC29B0017F201 /* QuotesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FB5FDD249BC29B0017F201 /* QuotesController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +33,9 @@
 		F4CCDDFC24996CF900AA7EBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4CCDE032499709400AA7EBF /* quotes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = quotes.json; path = "../../../../../Downloads/Arquivos Pensamentos/quotes.json"; sourceTree = "<group>"; };
 		F4CCDE0B2499772F00AA7EBF /* Savoye LET.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Savoye LET.ttf"; path = "../../../../../Downloads/Savoye LET.ttf"; sourceTree = "<group>"; };
-		F4CCDE0E2499823600AA7EBF /* ThoughtsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThoughtsView.swift; sourceTree = "<group>"; };
+		F4CCDE0E2499823600AA7EBF /* ThoughtsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThoughtsView.swift; sourceTree = "<group>"; wrapsLines = 0; };
+		F4FB5FDA249BBD970017F201 /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
+		F4FB5FDD249BC29B0017F201 /* QuotesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +72,9 @@
 				F4CCDDF024996CF500AA7EBF /* SceneDelegate.swift */,
 				F4CCDE07249974C500AA7EBF /* Fonts */,
 				F4CCDE022499706900AA7EBF /* Files */,
+				F4FB5FD9249BBCE30017F201 /* Models */,
 				F4CCDE0D2499819F00AA7EBF /* Views */,
+				F4FB5FDC249BC2650017F201 /* Controller */,
 				F4CCDDF424996CF900AA7EBF /* Assets.xcassets */,
 				F4CCDDFC24996CF900AA7EBF /* Info.plist */,
 				F4CCDDF624996CF900AA7EBF /* Preview Content */,
@@ -109,6 +115,22 @@
 				F420BAB7249AD243001E78A8 /* SettingsView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		F4FB5FD9249BBCE30017F201 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F4FB5FDA249BBD970017F201 /* Quote.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F4FB5FDC249BC2650017F201 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F4FB5FDD249BC29B0017F201 /* QuotesController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,6 +210,8 @@
 				F4CCDDEF24996CF500AA7EBF /* AppDelegate.swift in Sources */,
 				F4CCDDF124996CF500AA7EBF /* SceneDelegate.swift in Sources */,
 				F4CCDE0F2499823600AA7EBF /* ThoughtsView.swift in Sources */,
+				F4FB5FDB249BBD970017F201 /* Quote.swift in Sources */,
+				F4FB5FDE249BC29B0017F201 /* QuotesController.swift in Sources */,
 				F4CCDDF324996CF500AA7EBF /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

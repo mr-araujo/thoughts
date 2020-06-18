@@ -9,26 +9,32 @@
 import SwiftUI
 
 struct ThoughtsView: View {
+    var quote: Quote
+    
     var body: some View {
         ZStack{
-            Text("").background(Image("steve_jobs").blur(radius: 50))
+            Text("").background(Image(quote.image).blur(radius: 50))
             
             VStack {
-                Image("steve_jobs")
+                Image(quote.image)
                     .resizable()
-                    .aspectRatio(CGSize(width: 750.0, height: 666.0), contentMode: .fit)
+                    .aspectRatio(contentMode: .fit)
                 
                 Spacer()
                 
-                Text("Thoughts")
+                Text(quote.quote)
                     .font(.custom("Savoye LET", size: 50))
                     .foregroundColor(.black)
+                    .multilineTextAlignment(.center)
+                    .padding()
                 
                 Spacer()
                 
-                Text("Steve Jobs")
-                    .font(.custom("Savoye LET", size: 30))
+                Text(quote.author)
+                    .font(.custom("Savoye LET", size: 40))
                     .foregroundColor(.orange)
+                
+                Spacer()
             }
         }
     }
@@ -36,6 +42,6 @@ struct ThoughtsView: View {
 
 struct ThoughtsView_Previews: PreviewProvider {
     static var previews: some View {
-        ThoughtsView()
+        ThoughtsView(quote: QuotesController().quotes[10])
     }
 }
